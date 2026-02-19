@@ -2,18 +2,18 @@
   "name": "spritecook-plugin",
   "owner": {
     "name": "SpriteCook",
-    "email": "support@SpriteCook.ai"
+    "email": "support@spritecook.ai"
   },
   "metadata": {
-    "description": "Generate game assets via SpriteCook",
+    "description": "Generate game-ready art assets with SpriteCook MCP and skill guidance.",
     "version": "0.1.0",
     "pluginRoot": "plugins"
   },
   "plugins": [
     {
       "name": "spritecook-gen",
-      "source": "./plugins/spritecook-gen",
-      "description": "Basic plugin with MCP and Skill"
+      "source": "./spritecook-gen",
+      "description": "SpriteCook MCP server plus bundled generation skill for game art workflows."
     }
   ]
 }

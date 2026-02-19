@@ -1,34 +1,39 @@
-# Cursor plugin template
+# SpriteCook Cursor Plugin Repo
 
-Build and publish Cursor Marketplace plugins from a single repo.
+SpriteCook is an AI game art platform for generating production-ready assets from prompts, including pixel art and detailed/HD styles.
 
-Two starter plugins are included:
+This repository is the Cursor Marketplace plugin source for SpriteCook. It packages:
 
-- **starter-simple**: rules and skills only
-- **starter-advanced**: rules, skills, agents, commands, hooks, MCP, and scripts
+- SpriteCook MCP server configuration
+- SpriteCook skill instructions for autonomous game-art workflows
 
-## Getting started
+Current plugin in this repo:
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
+- `plugins/spritecook-gen`
 
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
+## What This Repo Is For
 
-To add more plugins, see `docs/add-a-plugin.md`.
+- Publish and maintain SpriteCook plugin(s) for Cursor Marketplace
+- Keep MCP configuration and skill content versioned together
+- Provide a clean reviewable source for marketplace submission
 
-## Single plugin vs multi-plugin
+## Repository Structure
 
-This template defaults to **multi-plugin** (multiple plugins in one repo).
+- `.cursor-plugin/marketplace.json`: marketplace-level manifest
+- `plugins/spritecook-gen/.cursor-plugin/plugin.json`: plugin manifest
+- `plugins/spritecook-gen/mcp.json`: SpriteCook MCP server config
+- `plugins/spritecook-gen/skills/spritecook-generate-sprites/SKILL.md`: bundled SpriteCook skill
 
-For a **single plugin**, move your plugin folder contents to the repository root, keep one `.cursor-plugin/plugin.json`, and remove `.cursor-plugin/marketplace.json`.
+## Local Validation
 
-## Submission checklist
+Run:
 
-- Each plugin has a valid `.cursor-plugin/plugin.json`.
-- Plugin names are unique, lowercase, and kebab-case.
-- `.cursor-plugin/marketplace.json` entries map to real plugin folders.
-- All frontmatter metadata is present in rule, skill, agent, and command files.
-- Logos are committed and referenced with relative paths.
-- `node scripts/validate-template.mjs` passes.
-- Repository link is ready for submission to the Cursor team (Slack or `kniparko@anysphere.com`).
+```bash
+node scripts/validate-template.mjs
+```
+
+## Cursor Marketplace Submission
+
+Submit this repository through:
+
+- https://cursor.com/marketplace/publish

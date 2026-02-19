@@ -1,0 +1,28 @@
+{
+  "name": "spritecook-gen",
+  "displayName": "SpriteCook",
+  "version": "0.1.0",
+  "description": "Generate pixel art and HD game assets in Cursor using SpriteCook.",
+  "author": {
+    "name": "SpriteCook",
+    "email": "support@spritecook.ai"
+  },
+  "keywords": [
+    "cursor",
+    "plugin",
+    "sprite",
+    "pixel",
+    "assets",
+    "mcp"
+  ],
+  "logo": "assets/logo.svg",
+  "skills": [
+    "skills/spritecook-generate-sprites"
+  ],
+  "commands": [
+    "commands/connect-spritecook.md"
+  ],
+  "mcpServers": [
+    "mcp.json"
+  ]
+}
