@@ -7,7 +7,7 @@ description: Generate sprites and game assets using the SpriteCook MCP tools. Us
 
 Use SpriteCook MCP tools when the user needs pixel art, detailed/HD sprites, game assets, icons, tilesets, textures, or UI elements for a game project. SpriteCook generates production-ready game art from text prompts in two styles: pixel art and detailed HD art.
 
-**Requires:** SpriteCook MCP server connected to your editor. If you installed this plugin, make sure `SPRITECOOK_API_KEY` is configured (or set your Bearer token in Cursor MCP settings). See [spritecook.ai](https://spritecook.ai) for account setup.
+**Requires:** SpriteCook MCP server connected to your editor with a real API key in the MCP `Authorization` header (`Bearer sc_live_...`). Use the connect script (`https://www.spritecook.ai/connect-mcp.ps1` or `https://www.spritecook.ai/connect-mcp.sh`) or follow [API docs](https://www.spritecook.ai/api-docs).
 
 ## First-Run Setup Check
 

@@ -18,18 +18,15 @@ The bundled skill helps the agent choose settings, generate assets consistently,
 
 ## API Key Setup
 
-The MCP server config uses:
-
-`Authorization: Bearer ${SPRITECOOK_API_KEY}`
-
-Set `SPRITECOOK_API_KEY` in your environment or replace the header value with your `sc_live_...` key in Cursor MCP settings after install.
+`mcp.json` contains a placeholder auth header by default. Use the connection script to write your real key into Cursor MCP config.
 
 ## Quick Start After Install
 
 1. Connect your account (recommended):
    - Windows: `iwr -useb https://www.spritecook.ai/connect-mcp.ps1 | iex`
    - macOS/Linux: `curl -fsSL https://www.spritecook.ai/connect-mcp.sh | bash`
-2. Or follow manual API setup: `https://www.spritecook.ai/api-docs`
+2. Or follow manual API setup: `https://www.spritecook.ai/api-docs` and set:
+   - `Authorization: Bearer sc_live_...`
 3. Reload Cursor window.
 4. Ask: `Check my SpriteCook credit balance`.
 5. Ask: `Generate a 32x32 pixel art chicken sprite with transparent background`.
