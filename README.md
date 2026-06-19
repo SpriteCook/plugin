@@ -1,11 +1,11 @@
 # SpriteCook Cursor Plugin
 
-SpriteCook brings game art generation into Cursor with a hosted MCP server and bundled skills for sprite generation, animation workflows, and asset handling.
+SpriteCook brings game art generation into Cursor with a hosted MCP server and bundled skills for sprite generation, local-file uploads, presets, animation workflows, and asset handling.
 
 ## What's Included
 
 - `mcp.json`: SpriteCook Cursor MCP configuration
-- `skills/`: bundled SpriteCook workflow skills, including Godot export guidance
+- `skills/`: bundled SpriteCook workflow skills, including uploads, presets, and Godot export guidance
 - `commands/`: quick command for connecting SpriteCook in Cursor
 - `.cursor-plugin/plugin.json`: Cursor plugin manifest
 
